@@ -353,7 +353,6 @@ a:hover {
 }
 .widget-slider .slide img {
   width: 100%;
-  transition: all 0.5 ease;
 }
 .widget-slider .active {
   position: absolute;
@@ -364,6 +363,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   transition: all 0.5 ease;
+}
+.widget-slider .skew {
+  animation: slides 0.1s ease-out;
+}
+.widget-slider .ske {
+  animation: slide 0.1s ease-out;
 }
 .widget-slider button {
   background-color: transparent;
@@ -385,6 +390,35 @@ a:hover {
 }
 .widget-slider-btn_right {
   right: 0px;
+}
+
+@keyframes slides {
+  25% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  75% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slide {
+  25% {
+    transform: translateX(-50px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -425,7 +425,6 @@ a:hover {
     text-align: center;
     img {
       width: 100%;
-      transition: all .5 ease;
     }
   }
     .active {
@@ -437,6 +436,12 @@ a:hover {
       background-repeat: no-repeat;
       background-size: 100%;
       transition: all .5 ease;
+    }
+    .skew {
+      animation: slides .1s ease-out;
+    }
+    .ske {
+      animation: slide .1s ease-out;
     }
 
     button {
@@ -462,5 +467,40 @@ a:hover {
 
     &-btn_right {
       right: 0px;
+    }
+  }
+
+  @keyframes slides {
+    25% {
+      transform: translateX(50px);
+    }
+
+    50% {
+      transform: translateX(100px);
+    }
+
+    75% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide {
+    25% {
+      transform: translateX(-50px);
+    }
+
+    50% {
+      transform: translateX(-100px);
+    }
+
+    75% {
+      transform: translateX(-50px);
+    }
+
+    100% {
+      transform: translateX(0px);
     }
   }

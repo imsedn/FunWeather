@@ -12,9 +12,21 @@ navButton.addEventListener('click', function() {
 let buttonLeft = document.querySelector('.widget-slider-btn_left');
 let buttonRight = document.querySelector('.widget-slider-btn_right');
 let slide = document.querySelectorAll('.slide');
+let imgActive = document.querySelector('.active');
 
 
 buttonRight.addEventListener('click', function() {
+  if (imgActive.classList.contains('skew') || imgActive.classList.contains('ske')) {
+    imgActive.classList.remove('skew');
+    imgActive.classList.remove('ske');
+    function addSkew() {
+      imgActive.classList.add('skew');
+    }
+    setTimeout(addSkew, 30);
+  }
+  else {
+    imgActive.classList.add('skew');
+  }
   for (let i = 0; i < slide.length; i++) {
     let img = slide[i].childNodes[0];
     let lastImg = slide[slide.length - 1].childNodes[0];
@@ -29,6 +41,17 @@ buttonRight.addEventListener('click', function() {
 });
 
 buttonLeft.addEventListener('click', function() {
+  if (imgActive.classList.contains('ske')) {
+    imgActive.classList.remove('ske');
+    imgActive.classList.remove('skew');
+    function addSkew() {
+      imgActive.classList.add('ske');
+    }
+    setTimeout(addSkew, 30);
+  }
+  else {
+    imgActive.classList.add('ske');
+  }
   for (let i = slide.length - 1; i >= 0; i--) {
     let img = slide[i].childNodes[0];
     let firstImg = slide[0].childNodes[0];
