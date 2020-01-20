@@ -365,10 +365,10 @@ a:hover {
   transition: all 0.5 ease;
 }
 .widget-slider .skew {
-  animation: slides 0.1s ease-out;
+  animation: slides 0.3s ease-out;
 }
 .widget-slider .ske {
-  animation: slide 0.1s ease-out;
+  animation: slide 0.3s ease-out;
 }
 .widget-slider button {
   background-color: transparent;
