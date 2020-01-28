@@ -120,6 +120,7 @@ let header = document.querySelector('.header');
 
 function upButtonClick() {
   header.scrollIntoView({block: "center", behavior: "smooth"});
+  e.preventDefault();
 }
 
 goTopBtn.addEventListener('click', upButtonClick);
@@ -132,6 +133,7 @@ let widget = document.querySelector('.widget-slider-btn_left');
 
 function downButtonClick() {
   widget.scrollIntoView({block: "center", behavior: "smooth"});
+  e.preventDefault();
 }
 
 goDownBtn.addEventListener('click', downButtonClick);
