@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  src: url(../fonts/ubuntu.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  src: url(../fonts/ubuntubold.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  src: url(../fonts/ubuntulight.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  src: url(../fonts/ubuntumedium.ttf);
+}
+
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -6,6 +30,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+button {
+  outline: none !important;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -145,6 +179,24 @@ a:hover {
     font-size: 18px;
     margin: 50px 0;
     max-width: 400px;
+  }
+  &-scroll {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 50%;
+    color: #ff5459;
+    bottom: 0px;
+    transition: all .2s ease;
+    text-align: center;
+    left: -25px;
+      &:hover {
+        transition: all .2s ease;
+        background-color: #ebe2d6;
+      }
   }
 
   &-buttons a {
@@ -311,6 +363,9 @@ a:hover {
 
     h1 {
       margin-top: 150px;
+    }
+    &-scroll {
+      left: calc(100% / 2 - 25px);
     }
 
     &-circle {
@@ -529,6 +584,7 @@ a:hover {
     justify-content: center;
     margin-top: 70px;
     margin-bottom: 200px;
+
     img {
       position: relative;
       z-index: 900;
@@ -541,14 +597,17 @@ a:hover {
       font-size: 230px;
       font-weight: 300;
     }
+
     .weath-cloud {
       left: 30px;
       top: 130px;
     }
+
     .weath-sun {
       left: 80px;
       top: 100px;
     }
+
     .weath-rain {
       left: 130px;
       top: 130px;
@@ -574,9 +633,11 @@ a:hover {
       left: 315px;
       animation: london 2s linear infinite;
     }
+
     &_sunny {
       background-color: #f2a14e;
     }
+
     &_rainy {
       background-color: #b8faee;
       color: #7e8c91;
@@ -590,10 +651,12 @@ a:hover {
       background-color: #6ca3ff;
       animation: sunny 2s linear infinite;
     }
+
     &_sundeg {
       background-color: #fc6a42;
-      
+
     }
+
     &_raindeg {
       background-color: #7693c8;
 
@@ -621,6 +684,7 @@ a:hover {
 
     &_inform {
       display: flex;
+
       &-first,
       &-second,
       &-third {
@@ -638,13 +702,16 @@ a:hover {
         margin-top: 30px;
         background-color: #fff;
       }
+
       &-first {
         z-index: 995;
       }
+
       &-second {
         z-index: 994;
         left: -10px;
       }
+
       &-third {
         z-index: 993;
         left: -20px;
@@ -669,18 +736,21 @@ a:hover {
       .weath-cloud {
         left: 0;
       }
+
       .weath-sun {
         left: 50px;
       }
+
       .weath-rain {
         left: 80px;
       }
     }
+
     &-whenclouds {
       h5 {
         font-size: 28px;
       }
-  
+
       p {
         font-size: 20px;
       }
@@ -703,12 +773,15 @@ a:hover {
     &-cloudy {
       margin-top: 0;
       margin-bottom: 0;
+
       .weath-cloud {
         left: 150px;
       }
+
       .weath-sun {
         left: 200px;
       }
+
       .weath-rain {
         left: 230px;
       }
@@ -746,15 +819,19 @@ a:hover {
     &-cloudy {
       margin-top: 0;
       margin-bottom: 0;
+
       .weath-cloud {
         left: 60px;
       }
+
       .weath-sun {
         left: 100px;
       }
+
       .weath-rain {
         left: 140px;
       }
+
       &_inform {
         display: flex;
         justify-content: center;
@@ -769,6 +846,7 @@ a:hover {
       p {
         margin: 30px auto;
       }
+
       &_inform {
         display: flex;
         justify-content: center;
@@ -800,6 +878,7 @@ a:hover {
       p {
         margin: 30px auto;
       }
+
       &_inform {
         display: flex;
         justify-content: center;
@@ -820,29 +899,35 @@ a:hover {
     color: #353854;
     position: relative;
     margin-bottom: 150px;
-      p {
-        word-wrap: break-word;
-      }
-      footer {
-        font-size: 16px;
-        font-weight: 500;
-      }
-      span {
-        position: absolute;
-        font-size: 140px;
-        font-weight: 400;
-        color: #648cff;
-      }
-      span:first-child {
-        top: -95px;
-        left: -8px;
-      }
-      span:last-child {
-        top: -35px;
-        right: 0;
-      }
+
+    p {
+      word-wrap: break-word;
+    }
+
+    footer {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    span {
+      position: absolute;
+      font-size: 140px;
+      font-weight: 400;
+      color: #648cff;
+    }
+
+    span:first-child {
+      top: -95px;
+      left: -8px;
+    }
+
+    span:last-child {
+      top: -35px;
+      right: 0;
+    }
   }
 }
+
 @media (max-width: 992px) {
   .rewiews {
     blockquote {
@@ -851,11 +936,13 @@ a:hover {
     }
   }
 }
+
 @media (max-width: 421px) {
   .rewiews {
     blockquote {
       font-size: 18px
     }
+
     footer {
       font-size: 10px;
     }
@@ -872,6 +959,7 @@ a:hover {
     background-color: #648cff;
     max-height: 480px;
   }
+
   h3 {
     text-transform: uppercase;
     color: #fff;
@@ -879,6 +967,7 @@ a:hover {
     margin-top: 115px;
     font-size: 35px;
   }
+
   p {
     color: #fff;
     margin-top: 30px;
@@ -886,30 +975,37 @@ a:hover {
     font-size: 18px;
     margin-bottom: 30px;
   }
+
   .download-links {
     margin-bottom: 110px;
+
     a {
       margin-right: 8px;
     }
   }
+
   &-phones {
     position: relative;
-      img {
-        position: absolute;
-      }
-      img:nth-child(1) {
-        filter: blur(3px);
-        top: 150px;
-      }
-      img:nth-child(2) {
-        filter: blur(3px);
-        top: 150px;
-        left: 400px;
-      }
-      img:nth-child(3) {
-        left: 210px;
-        top: 75px;
-      }
+
+    img {
+      position: absolute;
+    }
+
+    img:nth-child(1) {
+      filter: blur(3px);
+      top: 150px;
+    }
+
+    img:nth-child(2) {
+      filter: blur(3px);
+      top: 150px;
+      left: 400px;
+    }
+
+    img:nth-child(3) {
+      left: 210px;
+      top: 75px;
+    }
   }
 
 }
@@ -920,13 +1016,16 @@ a:hover {
       img {
         max-width: 200px;
       }
+
       img:nth-child(1) {
         top: 200px;
       }
+
       img:nth-child(2) {
         top: 200px;
         left: 270px;
       }
+
       img:nth-child(3) {
         left: 140px;
         top: 150px;
@@ -935,16 +1034,18 @@ a:hover {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .download {
     &-phones {
       display: none;
     }
+
     &-fluid {
       margin-top: 50px;
     }
   }
 }
+
 @media (max-width: 576px) {
   .download {
     h3 {
@@ -960,8 +1061,115 @@ a:hover {
 .footer {
   position: relative;
   z-index: 999;
+
   &-fluid {
     background-color: #353854;
-    height: 370px;
+    height: 100%;
+  }
+
+  &-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      color: #648cff;
+      text-transform: uppercase;
+
+      span {
+        color: #fc6a42;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        margin: 0 40px;
+
+        a {
+          color: #adadc1;
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: #cccdd4;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+
+  &-socials {
+    width: 150px;
+
+    a i {
+      color: #adadc1;
+      font-size: 28px;
+      transition: all .3s ease;
+    }
+
+    a:hover i {
+      color: #cccdd4;
+      transition: all .3s ease;
+    }
+  }
+
+  &-hr {
+    margin: 100px auto 0;
+    display: block;
+    width: calc(100% - (100% * 0.1));
+    height: 1px;
+    background-color: #adadc1;
+  }
+
+  &-copyright {
+    color: #4b4e6b;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  &-btn {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background-color: #434769;
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    color: #b5b5c8;
+    right: 110px;
+    bottom: 0px;
+    transition: all .2s ease;
+    text-align: center;
+      &:hover {
+        transition: all .2s ease;
+        background-color: #5f6386;
+      }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    &-content {
+      margin-top: 50px;
+      height: 100%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+    ul li {
+      margin: 25px 40px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    ul li {
+      margin: 25px 10px;
+    }
+    &-copyright {
+      text-align: center;
+    }
   }
 }

@@ -4,6 +4,7 @@ let navButton = document.querySelector('.navbar-toggler');
 
 navButton.addEventListener('click', function() {
     title.classList.toggle('top');
+
 })
 //BURGER MENU
 
@@ -111,3 +112,27 @@ function moveToSlide(n) {
   currentSlide = (n + slide.length) % slide.length;
   slide[currentSlide].className = 'slide active'; 
 }
+
+// SCROLL TOP
+
+let goTopBtn = document.querySelector('.footer-btn');
+let header = document.querySelector('.header');
+
+function upButtonClick() {
+  header.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+goTopBtn.addEventListener('click', upButtonClick);
+goTopBtn.addEventListener('touchstart', upButtonClick);
+
+// SCROLL DOWN
+
+let goDownBtn = document.querySelector('.main-scroll');
+let widget = document.querySelector('.widget-slider-btn_left');
+
+function downButtonClick() {
+  widget.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+goDownBtn.addEventListener('click', downButtonClick);
+goDownBtn.addEventListener('touchstart', downButtonClick);
