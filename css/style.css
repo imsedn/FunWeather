@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  src: url(../fonts/ubuntu.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 600;
+  src: url(../fonts/ubuntubold.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  src: url(../fonts/ubuntulight.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  src: url(../fonts/ubuntumedium.ttf);
+}
 .headline {
   text-align: center;
   margin: 120px 0;
