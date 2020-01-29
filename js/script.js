@@ -113,28 +113,26 @@ function moveToSlide(n) {
   slide[currentSlide].className = 'slide active'; 
 }
 
-// SCROLL TOP
+// // SCROLL TOP
 
-let goTopBtn = document.querySelector('.footer-btn');
-let header = document.querySelector('.header');
+// let goTopBtn = document.querySelector('.footer-btn');
+// let header = document.querySelector('.header');
 
-function upButtonClick() {
-  header.scrollIntoView({block: "center", behavior: "smooth"});
-  e.preventDefault();
-}
+// function upButtonClick() {
+//   header.scrollIntoView({block: "center", behavior: "smooth"});
+// }
 
-goTopBtn.addEventListener('click', upButtonClick);
-goTopBtn.addEventListener('touchstart', upButtonClick);
+// goTopBtn.addEventListener('click', upButtonClick);
+// goTopBtn.addEventListener('touchstart', upButtonClick);
 
-// SCROLL DOWN
+// // SCROLL DOWN
 
-let goDownBtn = document.querySelector('.main-scroll');
-let widget = document.querySelector('.widget-slider-btn_left');
+// let goDownBtn = document.querySelector('.main-scroll');
+// let widget = document.querySelector('.widget-slider-btn_left');
 
-function downButtonClick() {
-  widget.scrollIntoView({block: "center", behavior: "smooth"});
-  e.preventDefault();
-}
+// function downButtonClick() {
+//   widget.scrollIntoView({block: "center", behavior: "smooth"});
+// }
 
-goDownBtn.addEventListener('click', downButtonClick);
-goDownBtn.addEventListener('touchstart', downButtonClick);
+// goDownBtn.addEventListener('click', downButtonClick);
+// goDownBtn.addEventListener('touchstart', downButtonClick);

@@ -890,16 +890,21 @@ a:hover {
   border: 0px;
   border-radius: 10px 10px 0 0;
   color: #b5b5c8;
-  right: 110px;
+  right: -200px;
   bottom: 0px;
   transition: all 0.2s ease;
-  text-align: center;
+  z-index: 999;
 }
 .footer-btn:hover {
   transition: all 0.2s ease;
   background-color: #5f6386;
 }
 
+@media (max-width: 1600px) {
+  .footer-btn {
+    right: -15px;
+  }
+}
 @media (max-width: 991px) {
   .footer-content {
     margin-top: 50px;
@@ -919,6 +924,9 @@ a:hover {
   }
   .footer-copyright {
     text-align: center;
+  }
+  .footer-btn {
+    right: 0;
   }
 }
 
