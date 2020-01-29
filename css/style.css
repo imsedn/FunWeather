@@ -27,6 +27,10 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  outline: none !important;
+}
+
 ul,
 li {
   list-style: none;
