@@ -672,7 +672,7 @@ a:hover {
   }
 
   &-btn_left {
-    left: 0;
+    margin-left: -950px;
   }
 
   &-btn_right {
@@ -693,7 +693,7 @@ a:hover {
       top: 50px ;
     }
     &-btn_left {
-      left: -10px;
+      margin-left: -300px;
     }
   
     &-btn_right {

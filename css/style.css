@@ -568,7 +568,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 .widget-slider-btn_left {
-  left: 0;
+  margin-left: -950px;
 }
 .widget-slider-btn_right {
   right: 0;
@@ -585,7 +585,7 @@ a:hover {
     top: 50px;
   }
   .widget-slider-btn_left {
-    left: -10px;
+    margin-left: -300px;
   }
   .widget-slider-btn_right {
     right: -10px;
