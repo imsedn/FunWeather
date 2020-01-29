@@ -692,6 +692,13 @@ a:hover {
       height: 457px ;
       top: 50px ;
     }
+    &-btn_left {
+      left: -10px;
+    }
+  
+    &-btn_right {
+      right: -10px;
+    }
   }
 }
 
