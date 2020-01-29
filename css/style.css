@@ -383,6 +383,9 @@ a:hover {
   }
   .widget-slider .active {
     opacity: 1;
+    width: 262px !important;
+    height: 457px !important;
+    top: 50px !important;
   }
 }
 .widget-slider {
@@ -612,6 +615,9 @@ a:hover {
   }
 }
 @media (max-width: 992px) {
+  .screenshots-headline {
+    margin-top: 50px;
+  }
   .screenshots-circle_cloudy {
     left: 435px;
   }
