@@ -570,7 +570,7 @@ a:hover {
   left: 0;
 }
 .widget-slider-btn_right {
-  right: 0px;
+  right: 0;
 }
 
 @-webkit-keyframes slides {
@@ -654,14 +654,6 @@ a:hover {
     width: 262px;
     height: 457px;
     top: 50px;
-  }
-  .widget-slider-btn_left {
-    position: absolute;
-    left: -10px;
-  }
-  .widget-slider-btn_right {
-    position: absolute;
-    right: -10px;
   }
 }
 .screenshots-headline {
