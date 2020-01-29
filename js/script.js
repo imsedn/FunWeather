@@ -68,71 +68,71 @@ buttonLeft.addEventListener('click', function() {
 
 // SLIDE TOUCH
 
-let initialX = null;
-let initialY = null;
+// let initialX = null;
+// let initialY = null;
 
-for (let i = 0; i < slide.length; i++) {
-  slide[i].addEventListener("touchstart", startTouch, false);
-  slide[i].addEventListener("touchmove", moveTouch, false);
-}
+// for (let i = 0; i < slide.length; i++) {
+//   slide[i].addEventListener("touchstart", startTouch, false);
+//   slide[i].addEventListener("touchmove", moveTouch, false);
+// }
 
-let currentSlide = 1;
+// let currentSlide = 1;
 
-function startTouch(e) {
-    initialX = e.touches[0].clientX;
-    initialY = e.touches[0].clientY;
-}
+// function startTouch(e) {
+//     initialX = e.touches[0].clientX;
+//     initialY = e.touches[0].clientY;
+// }
 
-function moveTouch(e) {
+// function moveTouch(e) {
 
-    if (initialX === null) {
-        return;
-    }
-    if (initialY === null) {
-        return;
-    }
+//     if (initialX === null) {
+//         return;
+//     }
+//     if (initialY === null) {
+//         return;
+//     }
 
-    let currentY = e.touches[0].clientY;
-    let currentX = e.touches[0].clientX;
-    let diffY = initialY - currentY;
-    let diffX = initialX - currentX;
-    if (Math.abs(diffX) > Math.abs(diffY)) {
-        if (diffX > 8) {
-            moveToSlide(currentSlide + 1);
-        } else if(diffX < -8) {
-            moveToSlide(currentSlide - 1);
-        }
-    }
-    initialX = null;
-    initialY = null;
-    e.preventDefault();
-};
-function moveToSlide(n) {
-  slide[currentSlide].className = 'slide';
-  currentSlide = (n + slide.length) % slide.length;
-  slide[currentSlide].className = 'slide active'; 
-}
+//     let currentY = e.touches[0].clientY;
+//     let currentX = e.touches[0].clientX;
+//     let diffY = initialY - currentY;
+//     let diffX = initialX - currentX;
+//     if (Math.abs(diffX) > Math.abs(diffY)) {
+//         if (diffX > 8) {
+//             moveToSlide(currentSlide + 1);
+//         } else if(diffX < -8) {
+//             moveToSlide(currentSlide - 1);
+//         }
+//     }
+//     initialX = null;
+//     initialY = null;
+//     e.preventDefault();
+// };
+// function moveToSlide(n) {
+//   slide[currentSlide].className = 'slide';
+//   currentSlide = (n + slide.length) % slide.length;
+//   slide[currentSlide].className = 'slide active'; 
+// }
 
-// SCROLL TOP
+// // SCROLL TOP
 
-let goTopBtn = document.querySelector('.footer-btn');
-let header = document.querySelector('.header');
+// let goTopBtn = document.querySelector('.footer-btn');
+// let header = document.querySelector('.header');
 
-function upButtonClick() {
-  header.scrollIntoView({block: "center", behavior: "smooth"});
-}
+// function upButtonClick() {
+//   header.scrollIntoView({block: "center", behavior: "smooth"});
+// }
 
-goTopBtn.addEventListener('click', upButtonClick);
-goTopBtn.addEventListener('touchstart', upButtonClick);
+// goTopBtn.addEventListener('click', upButtonClick);
+// goTopBtn.addEventListener('touchstart', upButtonClick);
 
-// SCROLL DOWN
+// // SCROLL DOWN
 
-let goDownBtn = document.querySelector('.main-scroll');
-let widget = document.querySelector('.widget-slider-btn_left');
+// let goDownBtn = document.querySelector('.main-scroll');
+// let widget = document.querySelector('.widget-slider-btn_left');
 
-function downButtonClick() {
-  widget.scrollIntoView({block: "center", behavior: "smooth"});
-}
+// function downButtonClick() {
+//   widget.scrollIntoView({block: "center", behavior: "smooth"});
+// }
 
-goDownBtn.addEventListener('click', downButtonClick);
-goDownBtn.addEventListener('touchstart', downButtonClick);
+// goDownBtn.addEventListener('click', downButtonClick);
+// goDownBtn.addEventListener('touchstart', downButtonClick);
