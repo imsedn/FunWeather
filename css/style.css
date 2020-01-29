@@ -18,6 +18,15 @@
   font-weight: 500;
   src: url(../fonts/ubuntumedium.ttf);
 }
+body {
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul,
 li {
   list-style: none;
