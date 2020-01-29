@@ -66,7 +66,7 @@ buttonLeft.addEventListener('click', function() {
   }
 });
 
-SLIDE TOUCH
+//SLIDE TOUCH
 
 let initialX = null;
 let initialY = null;
