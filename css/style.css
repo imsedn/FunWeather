@@ -387,6 +387,12 @@ a:hover {
     height: 457px !important;
     top: 50px !important;
   }
+  .widget-slider-btn_left {
+    left: -10px !important;
+  }
+  .widget-slider-btn_right {
+    right: -10px !important;
+  }
 }
 .widget-slider {
   display: flex;
