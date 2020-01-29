@@ -567,10 +567,10 @@ a:hover {
   transition: all 0.3s ease;
 }
 .widget-slider-btn_left {
-  left: -50px;
+  left: 0;
 }
 .widget-slider-btn_right {
-  right: -50px;
+  right: 0;
 }
 
 @media (max-width: 992px) {
