@@ -69,7 +69,7 @@ buttonLeft.addEventListener('click', function() {
 //SLIDE TOUCH
 
 let initialX = null;
-let initialY = null;
+// let initialY = null;
 
 for (let i = 0; i < slide.length; i++) {
   slide[i].addEventListener("touchstart", startTouch, false);
@@ -102,10 +102,11 @@ function moveTouch(e) {
         } else if(diffX < -8) {
             moveToSlide(currentSlide - 1);
         }
+        e.preventDefault();
     }
     initialX = null;
     initialY = null;
-    e.preventDefault();
+    
 };
 function moveToSlide(n) {
   slide[currentSlide].className = 'slide';
