@@ -586,9 +586,11 @@ a:hover {
   }
   .widget-slider-btn_left {
     left: -10px;
+    padding: 0;
   }
   .widget-slider-btn_right {
     right: -10px;
+    padding: 0;
   }
 }
 @-webkit-keyframes slides {

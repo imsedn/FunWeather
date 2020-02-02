@@ -694,10 +694,12 @@ a:hover {
     }
     &-btn_left {
       left: -10px;
+      padding: 0;
     }
   
     &-btn_right {
       right: -10px;
+      padding: 0;
     }
   }
 }
